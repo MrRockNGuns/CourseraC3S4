@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_Contacto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="@dimen/corner_radius">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/actity_vertical_margin">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="85dp"
+            android:id="@+id/iv_ContactPhoto"
+            android:src="@drawable/coffe"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <ImageButton
+                android:id="@+id/btnLike"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:background="@drawable/like"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                android:text="@string/FullName"
+                android:textSize="@dimen/cv_contact_name"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPhone"
+                android:text="@string/Telefono"
+                android:textSize="@dimen/cv_contact_name"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

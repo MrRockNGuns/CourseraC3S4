@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="colorTextIcons">#FFFFFF</color>
+    <color name="colorLightPrimaryColor">#B3E5FC</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorDividerColor">#BDBDBD</color>
+
+    <dimen name="contact_title">33sp</dimen>
+    <dimen name="contact_name">40sp</dimen>
+    <dimen name="contact_phone">33sp</dimen>
+    <dimen name="contact_mail">20sp</dimen>
+    <dimen name="icon_detail">33dp</dimen>
+    <dimen name="layout_margin_top">20dp</dimen>
+    <dimen name="et_size">25dp</dimen>
+    <dimen name="actity_vertical_margin">8dp</dimen>
+    <dimen name="corner_radius">4dp</dimen>
+    <dimen name="cv_contact_name">20sp</dimen>
+</resources>

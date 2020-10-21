@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contactDetail"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+
+    <include android:id="@+id/miActionBar"
+        layout="@layout/actionbar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitle"
+        android:text="@string/tvConfirm"
+        android:textStyle="bold"
+        android:textSize="@dimen/contact_title"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvName"
+        android:text="@string/FullName"
+        android:textSize="@dimen/contact_name"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:onClick="Call">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/icon_detail"
+            android:layout_height="@dimen/icon_detail"
+            android:id="@+id/imgvContactName"
+            android:src="@drawable/phone_call"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPhone"
+            android:text="@string/Telefono"
+            android:textSize="@dimen/contact_phone"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/layout_margin_top"
+        android:onClick="sendMail"
+        android:layout_gravity="center_vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/icon_detail"
+            android:layout_height="@dimen/icon_detail"
+            android:id="@+id/imgvContactMail"
+            android:src="@drawable/envelope"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMail"
+            android:text="@string/mail"
+            android:textSize="@dimen/contact_mail"
+            android:layout_gravity="center_vertical"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDescrpiction"
+        android:text="@string/description"
+        android:textSize="@dimen/contact_mail"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBirth"
+        android:text="@string/fecha"
+        android:textSize="@dimen/contact_mail"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"/>
+</androidx.appcompat.widget.LinearLayoutCompat>
